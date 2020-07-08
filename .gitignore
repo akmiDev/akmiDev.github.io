@@ -11,3 +11,6 @@
 
 # Ignore Bitbucket pipeline file file
 bitbucket-pipelines.yml
+
+# Node imported scripts
+node_modules/
