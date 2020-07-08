@@ -9,5 +9,23 @@ pipelines:
   branches:
     master:
       - step:
+          name: Installation
+          caches:
+            - node
+          script:
+            - npm install
+          artifacts:
+            - node_modules/** # Save modules for next steps
+      - step:
+          name: Deploy to Github
           script:
           - git push --mirror git@github.com:akmiDev/akmiDev.github.io.git
+    feature/*:
+      - step:
+          name: Installation
+          caches:
+            - node
+          script:
+            - npm install
+          artifacts:
+            - node_modules/** # Save modules for next steps
