@@ -1,0 +1,19 @@
+{
+  "name": "akmi.dev",
+  "version": "1.0.0",
+  "description": "Akmi Development",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/akmi_dev/web.akmi.dev.git"
+  },
+  "keywords": [
+    "akmi.dev"
+  ],
+  "author": "Akmi Development",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/akmi_dev/web.akmi.dev#readme"
+}
