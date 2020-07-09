@@ -27,32 +27,36 @@
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar fixed-top custom-navbar">
-    <picture class="navbarlogo" alt="Akmi Logo">
-      <!-- Use this image if the user's OS setting is light or unset -->
-      <source media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)" 
-      srcset="src/images/akmi-logo-navbar-light.png">
-      <!-- Use this image if the user's OS setting is dark -->
-      <source media="(prefers-color-scheme: dark)" 
-      srcset="src/images/akmi-logo-navbar-dark.png">
-      <!-- Use this image if the user's browser doesn't support themes -->
-      <img src="src/images/akmi-logo-navbar-light.png">
-    </picture>
+    <div class="navbarlogo">
+      <picture>
+        <!-- Use this image if the user's OS setting is light or unset -->
+        <source media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)" 
+        srcset="src/images/akmi-logo-navbar-light.png">
+        <!-- Use this image if the user's OS setting is dark -->
+        <source media="(prefers-color-scheme: dark)" 
+        srcset="src/images/akmi-logo-navbar-dark.png">
+        <!-- Use this image if the user's browser doesn't support themes -->
+        <img src="src/images/akmi-logo-navbar-light.png" alt="logo">
+      </picture>
+    </div>
   </nav>
   <!-- Hero -->
   <section id="hero">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-          <picture class="img-fluid" alt="phone">
-            <!-- Use this image if the user's OS setting is light or unset -->
-            <source media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)" 
-            srcset="src/images/iphone-light.png">
-            <!-- Use this image if the user's OS setting is dark -->
-            <source media="(prefers-color-scheme: dark)" 
-            srcset="src/images/iphone-dark.png">
-            <!-- Use this image if the user's browser doesn't support themes -->
-            <img src="src/images/iphone-light.png">
-          </picture>
+          <div class="img-fluid">
+            <picture alt="phone">
+              <!-- Use this image if the user's OS setting is light or unset -->
+              <source media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)" 
+              srcset="src/images/iphone-light.png">
+              <!-- Use this image if the user's OS setting is dark -->
+              <source media="(prefers-color-scheme: dark)" 
+              srcset="src/images/iphone-dark.png">
+              <!-- Use this image if the user's browser doesn't support themes -->
+              <img src="src/images/iphone-light.png" alt="phone">
+            </picture>
+          </div>
         </div>
         <div class="col-md-7 content-box hero-content">
           <span>Simplify it</span>
