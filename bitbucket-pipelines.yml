@@ -29,3 +29,21 @@ pipelines:
             - npm install
           artifacts:
             - node_modules/** # Save modules for next steps
+    hotfix/*:
+      - step:
+          name: Installation
+          caches:
+            - node
+          script:
+            - npm install
+          artifacts:
+            - node_modules/** # Save modules for next steps
+    bugfix/*:
+      - step:
+          name: Installation
+          caches:
+            - node
+          script:
+            - npm install
+          artifacts:
+            - node_modules/** # Save modules for next steps
