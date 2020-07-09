@@ -44,6 +44,10 @@ section {
 	border: 0;
 	background-color: transparent;
 }
+.nav-logo-mobile {
+	margin: auto;
+	padding-right: 50px;
+}
 /* ==============================================
    3. Hero
 ===============================================*/
@@ -118,21 +122,10 @@ hr.rounded {
 /* ==============================================
    5. Media Queries
 ===============================================*/
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 1200px) { 
-	.nav-logo-mobile {
-		margin: auto;
-		padding-right: 50px;
-	}
-}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.hero-content {
 		margin-top: 100px;
-	}
-	.nav-logo-mobile {
-		margin: auto;
-		padding-right: 50px;
 	}
 }
 /* ==============================================
@@ -153,37 +146,40 @@ hr.rounded {
 		background-color: #141516!important;
 	}
 	#hero {
-		background-color: #202020;
+		background-color: #121212;
 	}
 	#hero p {
-		color: #aebecc;
+		color: #d6dce2;
 	}
 	#hero span {
-		color: #0095f7;
+		color: #36a3ec;
 	}
 	footer {
 		background-color: #141516;
 		color: #62656a;
 	}
 	footer a {
-		color: #62656a;
+		color: #cacaca;
+		filter: brightness(.8) contrast(1.2);
 	}
 	footer a:hover {
 		color: #0095f7;
 	}
 	footer i {
-		color: #62656a;
+		color: #cacaca;
+		filter: brightness(.8) contrast(1.2);
 	}
 	footer i:hover {
-		color: #0095f7;
+		color: #36a3ec;
 	}
 	footer small {
-		color: #62656a;
+		color: #cacaca;
+		filter: brightness(.8) contrast(1.2);
 	}
 	.external-links {
 		color: #0e4977;
 	}
 	hr.rounded {
-		border-top: 1px solid #62656a;
+		border-top: 1px solid #cacaca;
 	  }
   }
