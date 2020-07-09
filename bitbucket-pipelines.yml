@@ -3,29 +3,41 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: atlassian/default-image:2
-
-pipelines:
-  branches:
-    master:
-      - step:
-          name: Installation
-          caches:
+image: "atlassian/default-image:2"
+pipelines: 
+  branches: 
+    feature/*: 
+      - 
+        step: 
+          artifacts: 
+            - node_modules/**
+          caches: 
             - node
-          script:
-            - npm install
-          artifacts:
-            - node_modules/** # Save modules for next steps
-      - step:
-          name: Deploy to Github
-          script:
-          - git push --mirror git@github.com:akmiDev/akmiDev.github.io.git
-    feature/*:
-      - step:
           name: Installation
-          caches:
+          script: 
+            - "npm install"
+    master: 
+      - 
+        step: 
+          artifacts: 
+            - node_modules/**
+          caches: 
             - node
-          script:
-            - npm install
-          artifacts:
-            - node_modules/** # Save modules for next steps
+          name: Installation
+          script: 
+            - "npm install"
+      - 
+        step: 
+          name: "Deploy to Github"
+          script: 
+            - "git push --mirror git@github.com:akmiDev/akmiDev.github.io.git"
+  default: 
+    - 
+      step: 
+        artifacts: 
+          - node_modules/**
+        caches: 
+          - node
+        name: Installation
+        script: 
+          - "npm install"
