@@ -1,10 +1,11 @@
-/* /////////////////////////////
+/*
 	1. Basic Styles
 	2. Navbar
 	3. Hero
 	4. Footer
 	5. Media Queries
-   //////////////////////////*/
+	6. Dark theme support
+*/
 /* ==============================================
    1. Basic Styles 
 ===============================================*/
@@ -12,18 +13,15 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #3a3f52;
 }
-
 p {
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: .05em;
 	color: #53627C;
 }
-
 b {
 	font-weight: 700;
 }
-
 section {
 	padding: 100px 0px;
 }
@@ -36,7 +34,7 @@ section {
 	height: 70px;
 	max-height: 70px;
 }
-.logo {
+.navbarlogo {
 	width: 50px;
 	max-width: 50px;
 	height: 50px;
@@ -52,12 +50,10 @@ section {
 #hero {
 	background-color: #f6f8f9;
 }
-
 #hero h1 {
 	font-size: 50px;
 	font-weight: 300;
 }
-
 #hero p {
 	font-size: 24px;
     font-weight: 300;
@@ -65,9 +61,8 @@ section {
     margin-bottom: 0px;
     padding: 0px;
 }
-
 #hero span {
-	font-weight: 400;
+	font-weight: 450;
     color: #0095f7;
     text-transform: uppercase;
     letter-spacing: .05em;
@@ -80,33 +75,27 @@ footer {
 	padding: 15px 0;
     color: #62656a;
 }
-
 footer a {
 	color: #62656a;
 	float: right;
 }
-
 footer a:hover {
 	color: #0095f7;
 	text-decoration: none;
 }
-
 footer i {
 	font-size: 25px;
 	color: #62656a;
 	margin-left: 10px;
 	margin-top: auto;
 }
-
 footer i:hover {
 	color: #0095f7;
 }
-
 footer small {
 	color: #62656a;
 	float: right;
 }
-
 .external-links {
 	color: #0e4977;
 }
@@ -116,13 +105,11 @@ footer small {
 	margin-right: auto;
 	margin-left: 0px;
 }
-
 .icons {
 	float: top;
 	margin-left: auto;
 	margin-right: 20px;
 }
-
 hr.rounded {
 	width: 100%;
 	border-top: 1px solid #62656a;
@@ -148,3 +135,55 @@ hr.rounded {
 		padding-right: 50px;
 	}
 }
+/* ==============================================
+   6. Dark theme support
+===============================================*/
+@media (prefers-color-scheme: dark) {
+	body {
+	  color: #eee;
+	  background: #272a2e;
+	}
+	body a {
+	  color: #809fff;
+	}
+	p {
+		color: #53627C;
+	}
+	.custom-navbar {
+		background-color: #141516!important;
+	}
+	#hero {
+		background-color: #202020;
+	}
+	#hero p {
+		color: #aebecc;
+	}
+	#hero span {
+		color: #0095f7;
+	}
+	footer {
+		background-color: #141516;
+		color: #62656a;
+	}
+	footer a {
+		color: #62656a;
+	}
+	footer a:hover {
+		color: #0095f7;
+	}
+	footer i {
+		color: #62656a;
+	}
+	footer i:hover {
+		color: #0095f7;
+	}
+	footer small {
+		color: #62656a;
+	}
+	.external-links {
+		color: #0e4977;
+	}
+	hr.rounded {
+		border-top: 1px solid #62656a;
+	  }
+  }
