@@ -6,15 +6,6 @@
 image: atlassian/default-image:2
 
 pipelines:
-  default:
-    - step:
-        name: Installation
-        caches:
-        - node
-        script:
-        - npm install
-        artifacts:
-        - node_modules/** # Save modules for next steps
   branches:
     master:
       - step:
