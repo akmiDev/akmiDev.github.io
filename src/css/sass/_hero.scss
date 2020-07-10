@@ -1,0 +1,32 @@
+#hero {
+    background-color: $heroBackgroungColor;
+    h1 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 300;
+        color: $heroParagraphColor;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    span {
+        font-weight: 450;
+        color: $heroSpanColor;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #hero {
+        background-color: $heroBackgroungColor-DarkTheme;
+        p {
+            color: $heroParagraphColor-DarkTheme;
+        }
+        span {
+            color: $heroSpanColor-DarkTheme;
+        }
+    }
+}
