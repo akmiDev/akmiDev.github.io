@@ -1,0 +1,30 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    color: $bodyTextColor;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    color: $bodyParagraphTextColor;
+}
+b {
+    font-weight: 700;
+}
+section {
+    padding: 100px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+	  color: $bodyTextColor-DarkTheme;
+	  background: $bodyBackgroundColor-DarkTheme;
+	  a {
+		color: $bodyLinkColor-DarkTheme;
+	  }
+	}
+	p {
+		color: $bodyParagraphTextColor-DarkTheme;
+	}
+  }

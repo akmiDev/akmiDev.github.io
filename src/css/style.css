@@ -1,185 +1,194 @@
-/*
-	1. Basic Styles
-	2. Navbar
-	3. Hero
-	4. Footer
-	5. Media Queries
-	6. Dark theme support
-*/
-/* ==============================================
-   1. Basic Styles 
-===============================================*/
-body {
-	font-family: 'Roboto', sans-serif;
-	color: #3a3f52;
-}
-p {
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: .05em;
-	color: #53627C;
-}
-b {
-	font-weight: 700;
-}
-section {
-	padding: 100px 0px;
-}
-/* ==============================================
-   2. Navbar 
-===============================================*/
 .custom-navbar {
-	background-color: #ffffff!important;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.09);
-	height: 70px;
-	max-height: 70px;
+  background-color: #ffffff !important;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+  height: 70px;
+  max-height: 70px;
 }
+
 .navbarlogo {
-	width: 50px;
-	max-width: 50px;
-	height: 50px;
-	display: inline-block;
-	margin-left: auto;
-	margin-right: 20px;
-	border: 0;
-	background-color: transparent;
+  width: 50px;
+  max-width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 20px;
+  border: 0;
+  background-color: transparent;
 }
+
 .nav-logo-mobile {
-	margin: auto;
-	padding-right: 50px;
+  margin: auto;
+  padding-right: 50px;
 }
-/* ==============================================
-   3. Hero
-===============================================*/
-#hero {
-	background-color: #f6f8f9;
-}
-#hero h1 {
-	font-size: 50px;
-	font-weight: 300;
-}
-#hero p {
-	font-size: 24px;
-    font-weight: 300;
-    color: #8da2b5;
-    margin-bottom: 0px;
-    padding: 0px;
-}
-#hero span {
-	font-weight: 450;
-    color: #0095f7;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-}
-/* ==============================================
-   4. Footer
-===============================================*/
-footer {
-	background-color: #272a2e;
-	padding: 15px 0;
-    color: #62656a;
-}
-footer a {
-	color: #62656a;
-	float: right;
-}
-footer a:hover {
-	color: #0095f7;
-	text-decoration: none;
-}
-footer i {
-	font-size: 25px;
-	color: #62656a;
-	margin-left: 10px;
-	margin-top: auto;
-}
-footer i:hover {
-	color: #0095f7;
-}
-footer small {
-	color: #62656a;
-	float: right;
-}
-.external-links {
-	color: #0e4977;
-}
-.copyright {
-	float: left;
-	font-size: medium;
-	margin-right: auto;
-	margin-left: 0px;
-}
-.icons {
-	float: top;
-	margin-left: auto;
-	margin-right: 20px;
-}
-hr.rounded {
-	width: 100%;
-	border-top: 1px solid #62656a;
-	border-radius: 5px;
-  }
-/* ==============================================
-   5. Media Queries
-===============================================*/
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-	.hero-content {
-		margin-top: 100px;
-	}
-}
-/* ==============================================
-   6. Dark theme support
-===============================================*/
+
 @media (prefers-color-scheme: dark) {
-	body {
-	  color: #eee;
-	  background: #272a2e;
-	}
-	body a {
-	  color: #809fff;
-	}
-	p {
-		color: #53627C;
-	}
-	.custom-navbar {
-		background-color: #141516!important;
-	}
-	#hero {
-		background-color: #121212;
-	}
-	#hero p {
-		color: #d6dce2;
-	}
-	#hero span {
-		color: #36a3ec;
-	}
-	footer {
-		background-color: #141516;
-		color: #62656a;
-	}
-	footer a {
-		color: #cacaca;
-		filter: brightness(.8) contrast(1.2);
-	}
-	footer a:hover {
-		color: #0095f7;
-	}
-	footer i {
-		color: #cacaca;
-		filter: brightness(.8) contrast(1.2);
-	}
-	footer i:hover {
-		color: #36a3ec;
-	}
-	footer small {
-		color: #cacaca;
-		filter: brightness(.8) contrast(1.2);
-	}
-	.external-links {
-		color: #0e4977;
-	}
-	hr.rounded {
-		border-top: 1px solid #cacaca;
-	  }
+  .custom-navbar {
+    background-color: #141516 !important;
   }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #3a3f52;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color: #53627C;
+}
+
+b {
+  font-weight: 700;
+}
+
+section {
+  padding: 100px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #272a2e;
+  }
+  body a {
+    color: #809fff;
+  }
+  p {
+    color: #53627C;
+  }
+}
+
+#hero {
+  background-color: #f6f8f9;
+}
+
+#hero h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#hero p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #8da2b5;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+#hero span {
+  font-weight: 450;
+  color: #0095f7;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+@media (prefers-color-scheme: dark) {
+  #hero {
+    background-color: #121212;
+  }
+  #hero p {
+    color: #d6dce2;
+  }
+  #hero span {
+    color: #36a3ec;
+  }
+}
+
+footer {
+  background-color: #272a2e;
+  padding: 15px 0;
+  color: #62656a;
+}
+
+footer a {
+  color: #62656a;
+  float: right;
+}
+
+footer a:hover {
+  color: #0e4977;
+  text-decoration: none;
+}
+
+footer i {
+  font-size: 25px;
+  color: #62656a;
+  margin-left: 10px;
+  margin-top: auto;
+}
+
+footer i:hover {
+  color: #0e4977;
+}
+
+footer small {
+  color: #62656a;
+  float: right;
+}
+
+hr.rounded {
+  width: 100%;
+  border-top: 1px solid #62656a;
+  border-radius: 5px;
+}
+
+.external-links {
+  color: #0e4977;
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    background-color: #141516;
+    color: #62656a;
+  }
+  footer a {
+    color: #cacaca;
+    -webkit-filter: brightness(0.8) contrast(1.2);
+            filter: brightness(0.8) contrast(1.2);
+  }
+  footer a:hover {
+    color: #6fc2fa;
+  }
+  footer i {
+    color: #cacaca;
+    -webkit-filter: brightness(0.8) contrast(1.2);
+            filter: brightness(0.8) contrast(1.2);
+  }
+  footer i:hover {
+    color: #6fc2fa;
+  }
+  footer small {
+    color: #cacaca;
+    -webkit-filter: brightness(0.8) contrast(1.2);
+            filter: brightness(0.8) contrast(1.2);
+  }
+  .external-links {
+    color: #0e4977;
+  }
+  hr.rounded {
+    border-top: 1px solid #cacaca;
+  }
+}
+
+.icons {
+  float: top;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.copyright {
+  float: left;
+  font-size: medium;
+  margin-right: auto;
+  margin-left: 0px;
+}
+
+@media (min-width: 1200px) {
+  .hero-content {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
